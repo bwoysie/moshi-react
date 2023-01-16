@@ -1,2 +1,2 @@
 # moshi-react
-rect practice
+react practice
