@@ -6,17 +6,26 @@ class Counter extends Component {
     //in this case we will create state set it to an object called counter and set that to 0
    
     state= {
-        count: 0
+        count: 0,
+        //imageUrl: 'https://picsum.photos/200'
+        //this goes in the div below if we use the imageUrl
     };
     //we set the state to an object
     /* we can put a javascript expression in the curly brackets below in the return statement.... an expression is anything that produced value */
+    // see below
+    //we can also pass styles to our render function or we can do it in line like this style={{fontSIze:30}} and fet rid of the style object below the state object
+
+     styles = {
+        fontSize: 20,
+        fontWeight: 'bold'
+     }
     render() { 
         return (
         <div>
-                
-            <span>{this.formatCount()}</span>
+              
+            <span style={this.styles} className='badge badge-primary m-2'>{this.formatCount()}</span>
             
-            <button>Increment</button>
+            <button className=' btn btn-secoindary btn-sm'>Increment</button>
                 
         </div>
     );       
